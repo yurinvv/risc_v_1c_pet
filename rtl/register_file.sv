@@ -12,6 +12,9 @@
 //  Description   : Demo RISC-V register file. 
 //==================================================================================================
 
+`ifndef REGISTER_FILE
+  `define REGISTER_FILE
+
 `ifndef RESET_TYPE
 	`define RESET_TYPE(X) or posedge X
 	`define RESET_LEVEL(X) X
@@ -86,3 +89,5 @@ module register_file#(
 
 
 endmodule
+
+`endif
